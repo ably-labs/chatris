@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatris</title>
+    <link rel="icon" href="https://static.ably.dev/motif-black.svg?chatris" />
+    <link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta property="og:title" content="Chatris" />
+    <meta property="og:description"
+        content="Multiplayer Tetris where you move the blocks by chat messages." />
+    <meta property="og:url" content="https://chatris.ably.dev" />
+    <meta property="og:image" content="" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@ablyrealtime" />
+    <meta name="twitter:title" content="Collaborative pixelart drawing canvas" />
+    <meta name="twitter:description"
+        content="Multiplayer Tetris where you move the blocks by chat messages." />
+    <meta name="twitter:image" content="" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.1/p5.min.js"
+        integrity="sha512-NxocnqsXP3zm0Xb42zqVMvjQIktKEpTIbCXXyhBPxqGZHqhcOXHs4pXI/GoZ8lE+2NJONRifuBpi9DxC58L0Lw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ably/1.2.22/ably.min.js"
+        integrity="sha512-ldCPQyVAsAtz6sQMcWzgMWPrCiD6RViwDYuiLZMxhdDvjFM+VQZ+Zn9PmwYfKmjgiKVS41gt9jGwyyfL08BRig=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="connectAbly.js"></script>
+    <script src="sketch.js"></script>
+</head>
+
+<body>
+    <main>
+        <h1>Chatris</h1>
+        <div class="left">
+            <p>Move the blocks by typing chat messages!</p>
+            <ol>
+                <li>Connect to join a live chatris session.</li>
+                <li>Invite others to join this site.</li>
+                <li>Start typing messages such as 'left', 'right' , 'rotate', 'down' to control the blocks.</li>
+            </ol>
+            <div id="score"></div>
+        </div>
+        <div class="right" id="p5canvas">
+            <div class="controls">
+                <button id="resetButton" onclick="reset()">Reset</button>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p id="footer">Made with <span class="pink">❤</span> by <a href="https://twitter.com/marcduiker">@marcduiker</a>. 
+        Powered by <a href="https://www.ably.com">ably.com</a> 🚀. 
+        Look at the source on <a href="https://github.com/ably-labs/chatris">GitHub</a> 👩‍💻.</p>
+    </footer>
+</body>
+
+</html>

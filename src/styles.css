@@ -1,0 +1,45 @@
+body, button, select, p, h1 {
+    margin: 0.3em;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+main, #p5canvas, footer {
+    display: grid;
+    justify-content: center;
+}
+
+p, li, select, button {
+    font-size: large;
+}
+
+.left {
+    display: inline-block;
+    width: 50%;
+}
+
+.right {
+    display: inline-block;
+    width: 50%;
+}
+
+footer > p {
+    font-size: smaller;
+}
+
+.pink {
+    color: #ff55ff;
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+        margin: 0;
+    }
+
+    main, #p5canvas, controls, footer  {
+        display: block;
+    }
+
+    p, li, select, button {
+        font-size: small;
+    }
+}
